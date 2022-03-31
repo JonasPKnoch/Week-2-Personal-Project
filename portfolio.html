@@ -5,11 +5,71 @@
     </head>
     <body>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="#">Portfolio</a>
+            <table>
+                <caption>Jonas's Website</caption>
+                <tr>
+                    <td style="padding: 20px;"><a href="index.html">Home</a></td>
+                    <td style="padding: 20px;"><a href="about.html">About</a></td>
+                    <td style="padding: 20px;"><a href="#">Portfolio</a></td>
+                </tr>
+            </table>
         </nav>
         <h1>My Portfolio</h1>
+
+        <h3>My Education:</h3>
+        <table style="border: 1px solid black; border-collapse: collapse;">
+            <tr>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 5px;">School</th>
+                <th style="border: 1px solid black; border-collapse: collapse; padding: 5px;">Years</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 5px;">AISU</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 5px;">2015-2017</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 5px;">SLCC</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 5px;">2018-2020</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 5px;">U of U</td>
+                <td style="border: 1px solid black; border-collapse: collapse; padding: 5px;">2020-Present</td>
+            </tr>
+        </table>
+
+        <br><br>
+
         <a href="resources/Resume (March 2021, Rivet).pdf">Download my resume</a>
+
+        <h3>Contact Me!</h3>
+        <form action="http://form-test.slccwebdev.com/form-success.php" method="get" target="_blank">
+            <label for="formName">Name:</label>
+            <input name="formName" type="text" id="formName">
+
+            <br>
+
+            <label for="formEmail">Email:</label>
+            <input name="formEmail" type="email" id="formEmail" required>
+
+            <br>
+
+            <label for="formComments">Comments:</label><br>
+            <textarea name="formComments" id="formComments" cols="25" rows = "7" placeholder="Enter comments here..."></textarea>
+
+            <br>
+
+            <label for="formPreferedContact">How would you like us to reach you?</label><br>
+            <select id="formPreferedContact" name="formPreferedContact">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="text">Text</option>
+                <option value="snailMail">Snail Mail</option>
+            </select>
+
+            <br><br>
+
+            <input type="submit" value="Submit!">
+        </form>
+
+        <br>
     </body>
 </html>
